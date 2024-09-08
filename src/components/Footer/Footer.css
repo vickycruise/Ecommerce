@@ -1,0 +1,63 @@
+.footer {
+  background: linear-gradient(135deg, #2c302f 0%, #383a39 100%);
+  color: #fff;
+  padding: 2rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo h1 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffeb3b;
+}
+
+.footer-socials {
+  margin: 1rem 0;
+}
+
+.footer-socials a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #ffeb3b;
+}
+
+.footer-bottom {
+  border-top: 1px solid #fff;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}

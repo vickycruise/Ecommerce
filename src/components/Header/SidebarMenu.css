@@ -1,0 +1,46 @@
+.offcanvas {
+  width: 250px; /* Fixed width for the off-canvas sidebar */
+}
+
+.nav-link {
+  font-size: 1rem; /* Font size for the menu items */
+  padding: 10px 15px; /* Padding for better spacing */
+  border-radius: 4px; /* Rounded corners */
+  transition: all 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-link:hover {
+  background-color: #a3c5ee; /* Slightly lighter on hover */
+}
+
+.nav-link i.bi-chevron-right {
+  transition: transform 0.3s; /* Smooth icon rotation */
+}
+
+.nav-link.collapsed > i.bi-chevron-right {
+  transform: rotate(90deg); /* Rotate the icon when the submenu is open */
+}
+
+.collapse ul {
+  padding-left: 0; /* Remove padding from submenus */
+}
+
+.collapse ul li a {
+  padding: 8px 20px; /* Submenu item padding */
+}
+.navbar-nav .nav-item .hover-dropdown:hover > .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+  margin-top: 0; /* Adjust positioning */
+}
+
+.dropdown-menu {
+  margin-top: 0; /* Align dropdown with parent */
+  transition: all 0.3s ease; /* Smooth transition */
+  background-color: #343a40; /* Dropdown background color */
+  border: none; /* Remove border */
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #495057; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
