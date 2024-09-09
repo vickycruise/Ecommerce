@@ -69,7 +69,7 @@ function SidebarMenu() {
           </NavDropdown>
           {user && (
             <div className=" d-flex position-absolute end-0 mx-5">
-              <a class="navbar-brand">{user?.name}</a>
+              <span class="navbar-brand">{user?.name}</span>
               <div class="btn-group ">
                 <button
                   class="btn btn-secondary dropdown-toggle"
@@ -83,7 +83,6 @@ function SidebarMenu() {
                   <li
                     className="text-light  text-center "
                     onClick={() => handleClear()}
-                    href=""
                   >
                     {" "}
                     Log Out
@@ -115,10 +114,7 @@ function SidebarMenu() {
         </Offcanvas.Header>
         <Offcanvas.Body className="p-0">
           <Nav className="flex-column">
-            <Nav.Link
-              href=""
-              className="text-light d-flex align-items-center py-3 px-4"
-            >
+            <Nav.Link className="text-light d-flex align-items-center py-3 px-4">
               <i className="bi bi-speedometer2 me-2"></i> Dashboards
             </Nav.Link>
 
@@ -127,7 +123,7 @@ function SidebarMenu() {
               <Nav.Link
                 className="text-light d-flex align-items-center py-3 px-4"
                 data-bs-toggle="collapse"
-                href="#appsMenu"
+                href="/dashboard"
                 role="button"
                 aria-expanded="false"
                 aria-controls="appsMenu"
@@ -137,13 +133,13 @@ function SidebarMenu() {
               </Nav.Link>
               <div className="collapse" id="appsMenu">
                 <Nav className="flex-column ms-4">
-                  <Nav.Link href="" className="text-light py-2">
+                  <Nav.Link href="/calender" className="text-light py-2">
                     Calendar
                   </Nav.Link>
-                  <Nav.Link href="" className="text-light py-2">
+                  <Nav.Link href="/chat" className="text-light py-2">
                     Chat
                   </Nav.Link>
-                  <Nav.Link href="" className="text-light py-2">
+                  <Nav.Link href="/crm" className="text-light py-2">
                     CRM
                   </Nav.Link>
                 </Nav>
@@ -155,7 +151,7 @@ function SidebarMenu() {
               <Nav.Link
                 className="text-light d-flex align-items-center py-3 px-4"
                 data-bs-toggle="collapse"
-                href="#ecommerceMenu"
+                href="/ecommerceMenu"
                 role="button"
                 aria-expanded="false"
                 aria-controls="ecommerceMenu"
@@ -165,13 +161,13 @@ function SidebarMenu() {
               </Nav.Link>
               <div className="collapse" id="ecommerceMenu">
                 <Nav className="flex-column ms-4">
-                  <Nav.Link href="" className="text-light py-2">
+                  <Nav.Link href="/Products" className="text-light py-2">
                     Products
                   </Nav.Link>
-                  <Nav.Link href="" className="text-light py-2">
+                  <Nav.Link href="/Products" className="text-light py-2">
                     Product Details
                   </Nav.Link>
-                  <Nav.Link href="" className="text-light py-2">
+                  <Nav.Link href="/Products" className="text-light py-2">
                     Orders
                   </Nav.Link>
                 </Nav>
